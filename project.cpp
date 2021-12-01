@@ -13,12 +13,24 @@ void calendar(int y, int m);
 
 int m_calend(void){
     int year,month;
-
+int monthi;
+char yn;
     printf("Enter the month and year: ");
     scanf("%d %d", &month, &year);
 
     calendar(year, month);
-
+    printf("CALENDER FOR %d YEAR IS AS FOLLOW : ",year);
+    printf("Do You Want To Get Full Year Calendar\n");
+    printf(" Y for yes and N for NO : ");
+    scanf("%s",&yn);
+    if(yn=='Y'||yn=='y'){
+    for(monthi=1;monthi<13;monthi++){
+        calendar(year,monthi);
+    }
+    }
+    else {
+        printf("YOUR REPLY WAS NO");
+    }
     return 0;
 }
 
