@@ -13,12 +13,12 @@ int Alarm_clock(){
     system("cls");
 
     printf("\n");
-    printf("                                Enter the time you want the alarm to ring :\n Enter the hour : ");
+    printf("                                Enter the time you want the alarm to ring :\n                                Enter the hour : ");
 
     scanf("%d",&a);
-    printf("Enter the minute : ");
+    printf("                                Enter the minute : ");
     scanf("%d",&b);
-    printf("Enter the seconds : ");
+    printf("                                Enter the seconds : ");
     scanf("%d",&c);
 
 
@@ -284,7 +284,7 @@ int wlcm(){
     else if(choice==5){
         system("cls");
         int n=5;
-        printf("Thank you for using our program Made BY BALAJI,DHRUV,ISHAN and LOHIT");
+        printf("Thank you for using our program Made BY BALAJI , DHRUV and ISHAN ");
         while(n--){
         system("color 05");
         delay(100);
