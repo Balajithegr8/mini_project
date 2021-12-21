@@ -79,8 +79,8 @@ int m_calend(void){
     system("cls");
     system("color 05");
     int year,month;
-int monthi;
-char yn;
+    int monthi;
+    char yn;
     printf("Enter the month and year: ");
     scanf("%d %d", &month, &year);
 
@@ -284,7 +284,7 @@ int wlcm(){
     else if(choice==5){
         system("cls");
         int n=5;
-        printf("Thank you for using our program Made BY BALAJI , DHRUV and ISHAN ");
+        printf("Thank you for using our program Made BY BALAJI(RA2111026010310) , DHRUV(RA2111026010302) and ISHAN(RA2111026010325) ");
         while(n--){
         system("color 05");
         delay(100);
