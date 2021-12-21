@@ -12,7 +12,7 @@
 ### THE CURRENT PROJECT CONTAINS A .EXE COMPILED FILE AND A SORCECODE FILE ###
 * Your pc might not allow to run to exe file but click on "run anyways" to run it.
 ## Contributors ##
-* [Balaji](https://github.com/Balajithegr8)
-* [Ishan manglik](https://github.com/IshanManglik)
-* [Dhruv chodhary](https://github.com/Dhruvch1244)
+* [Balaji (RA2111026010310)](https://github.com/Balajithegr8)
+* [Ishan manglik (RA2111026010325)](https://github.com/IshanManglik)
+* [Dhruv chodhary(RA2111026010302)](https://github.com/Dhruvch1244)
 #### Thanks for viewing our project ####
