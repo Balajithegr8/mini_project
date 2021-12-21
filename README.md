@@ -8,6 +8,7 @@
 * For compiling the code You need to have graphics.h header file and its respective library to compile the code the basic version of mingw doesn't come with it.
 * it can be achived easily, just click [here.](https://www.geeksforgeeks.org/include-graphics-h-codeblocks/)
 * **HOWEVER THE COMPILED .EXE WILL RUN ON ALL THE COMPUTERS WITHOUT ANY PROBLEM OR ERROR.**
+* The entire code is written in c language but The sorcecode has extension of cpp to avoid any errors caused by graphics.h file
 ### THE CURRENT PROJECT CONTAINS A .EXE COMPILED FILE AND A SORCECODE FILE ###
 * Your pc might not allow to run to exe file but click on "run anyways" to run it.
 ## Contributors ##
