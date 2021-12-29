@@ -1,12 +1,12 @@
 #include<conio.h>
 #include<stdio.h>
-#include<graphics.h>
+#include<graphics.h> //This is the graphics header file which is used to show graphics in windows bgi
 #include<math.h>
-#include<time.h>
-#include<windows.h>
+#include<time.h>  //very important in collecting local time from windows
+#include<windows.h> // allows us to use sleep and other commands which change the cmd flow and look
 int Alarm_clock(){
 
-    system("color 01");
+    system("color 01"); // changes cmd colour
 
     int a,b,c;
 
@@ -22,11 +22,11 @@ int Alarm_clock(){
     scanf("%d",&c);
 
 
-    time_t rawtime;
+    time_t rawtime; // taking local time from windows
     struct tm * timeinfo;
     time( &rawtime );
     timeinfo = localtime( &rawtime );
-    int h=timeinfo->tm_hour,m=timeinfo->tm_min,s=timeinfo->tm_sec;
+    int h=timeinfo->tm_hour,m=timeinfo->tm_min,s=timeinfo->tm_sec; // giving hour to h and minute m and seconds to s
 
     int i=1;
 
@@ -49,9 +49,9 @@ int Alarm_clock(){
         }
         printf("\n Clock :");
 
-        printf("\n %02d:%02d:%02d",h,m,s);
+        printf("\n %02d:%02d:%02d",h,m,s); // presentation of the clock
 
-        Sleep(995);
+        Sleep(995); // sleeps the cmd for 995 milisecs
         system ("cls");
 
         if(a==h && b==m && c==s){
@@ -59,13 +59,13 @@ int Alarm_clock(){
             int n=5;
             while(n--){
             printf("WAKE UP ");
-		    Beep(10000000, 450);
+		    Beep(10000000, 450); // this fuction gives sound when called and here 10000000 is the frequency and 450 is the time in ms
             i=0;
             }
         }
     }
     printf("\n");
-    system("Pause");
+    system("Pause"); // waits for the user to press a key...
     system("cls");
 }
 
@@ -233,9 +233,9 @@ int coundown(){
 	printf("Enter the countdown time in seconds :");
 	scanf("%d",&k);
 	while(k--){
-        system("color 06");
+        system("color 06"); // changes cmd colour
 		printf("You have %d seconds left\n",k);
-		Sleep(995);
+		Sleep(995); // sleeps the system for 995 ms
 		system ("cls");
 	}
 	int j=5;
