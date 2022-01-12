@@ -26,6 +26,7 @@ int Alarm_clock(){
     struct tm * timeinfo;
     time( &rawtime );
     timeinfo = localtime( &rawtime );
+	
     int h=timeinfo->tm_hour,m=timeinfo->tm_min,s=timeinfo->tm_sec; // giving hour to h and minute m and seconds to s
 
     int i=1;
@@ -82,11 +83,14 @@ int m_calend(void){         //this calender can print any year from 0 to infinit
     int monthi;
     char yn;
     printf("Enter the month and year: ");
+	
     scanf("%d %d", &month, &year);
 
     calendar(year, month);
     printf("CALENDER FOR %d YEAR IS AS FOLLOW : ",year);
+	
     printf("Do You Want To Get Full Year Calendar\n");
+	
     printf(" Y for yes and N for NO : ");
     scanf("%s",&yn);
     if(yn=='Y'||yn=='y'){
@@ -166,9 +170,13 @@ void drawClock(int xc,int yc)       //drawing clock face
 {
 int i,inr=140,outr=150;     //inner radius and outer radius
 int hdeg,mindeg,secdeg,x,y;
+	
 circle(xc,yc,outr);             //circle(with center and radius)
+	
 circle(xc,yc,130);
+	
 setfillstyle(SOLID_FILL,LIGHTBLUE);
+	
 fillellipse(xc,yc,20,20);
 for(i=180;i>-360;i-=6)           //formulae-(center)+radius*sin(angle((decreasing 6 every turn)*pie/180)
 {
@@ -181,11 +189,14 @@ fillellipse(xc+inr*sin(i*3.14f/180),yc+inr*cos(i*3.14f/180),1,1);
 hdeg=hr*360/12+30*min/60;     //real time angle finder for hand (1 min = 6degrees)
 mindeg=min*6;               
 secdeg=sec*6;
+	
 x=xc+75*sin(hdeg*3.14f/180); //co-ordinate x of hour   
 y=yc-75*cos(hdeg*3.14f/180);    //co-ordinate y of hour   
+	
 line(xc,yc,x,y);      //drawing hour line from center
 x=xc+90*sin(mindeg*3.14f/180);//same as above
 y=yc-90*cos(mindeg*3.14f/180);
+	
 line(xc,yc,x,y);
 x=xc+120*sin(secdeg*3.14f/180);
 y=yc-120*cos(secdeg*3.14f/180);
